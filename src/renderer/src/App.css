@@ -1,0 +1,60 @@
+.App-container {
+  @apply flex flex-col justify-center items-center bg-[url(src/images/youtube.gif)] bg-cover bg-center h-screen gap-[5rem];
+
+  .title {
+    @apply text-[white] text-[4rem] font-semibold;
+    filter: drop-shadow(2px 2px 4px black);
+  }
+
+  .App {
+    @apply flex w-auto gap-[0rem] items-center justify-center  font-semibold;
+  }
+  .container-1,
+  .container-3 {
+    @apply w-full flex flex-col justify-center items-center gap-[2rem] w-[35rem] h-[40rem];
+  }
+
+  .container-3 {
+    @apply relative;
+  }
+
+  .arrow {
+    @apply h-auto  min-w-[10rem] text-[#0a1729] ml-[2rem] mr-[2rem];
+    filter: drop-shadow(0.5rem 0.5rem 1rem black);
+    transition: 0.5s ease;
+  }
+
+  .arrow:hover {
+    @apply min-w-[13rem] text-[#0a1729];
+    filter: drop-shadow(0.5rem 0.5rem 1rem black);
+  }
+
+  .text-area-left,
+  .text-area-right {
+    @apply flex items-center justify-center p-[1.5rem] rounded-[0.6rem] h-full w-full resize-none;
+    outline: none;
+  }
+
+  .text-area-left {
+    @apply text-[white];
+
+    background: #0a17299d;
+    box-shadow: 5px 5px 60px black;
+  }
+
+  .text-area-right {
+    @apply text-[white];
+
+    background: #0a17299d;
+    box-shadow: 5px 5px 60px black;
+  }
+
+  .text-area-left::-webkit-scrollbar,
+  .text-area-right::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  .copy-paste {
+    @apply text-[white] text-[2.8rem] absolute bottom-[1rem] right-[1rem] cursor-pointer;
+  }
+}
