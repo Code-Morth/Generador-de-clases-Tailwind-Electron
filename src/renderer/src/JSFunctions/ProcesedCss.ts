@@ -1,32 +1,37 @@
-const ProcesedCss = (data: any) => {
-  const regex = /className="([^"]*)"/g
+import TailwindClass from "../TailwindClass.json";
 
-  const classesArray: string[] = []
-  let match
+const ProcesedCss = (data: any) => {
+  const regex = /className="([^"]*)"/g;
+
+  const classesArray: string[] = [];
+  let match;
 
   while ((match = regex.exec(data)) !== null) {
-    const classes: [] = match[1].split(' ')
+    const classes: string[] = match[1].split(' ');
 
-    classesArray.push(...classes)
+    // Filtrar clases que no sean de Tailwind CSS
+    const nonTailwindClasses = classes.filter(className => !TailwindClass.includes(className.trim()));
+
+    classesArray.push(...nonTailwindClasses);
   }
 
-  let cssText = ' '
+  let cssText = ' ';
 
   classesArray.forEach((className) => {
     if (className.trim() !== '') {
-      cssText += `.${className.trim()} {\n`
-      cssText += `  @apply ;\n\n`
-      cssText += `  @screen tablet {\n`
-      cssText += `    @apply ;\n`
-      cssText += `  }\n\n`
-      cssText += `  @screen laptop {\n`
-      cssText += `    @apply ;\n`
-      cssText += `  }\n`
-      cssText += `}\n\n`
+      cssText += `.${className.trim()} {\n`;
+      cssText += `  @apply ;\n\n`;
+      cssText += `  @screen tablet {\n`;
+      cssText += `    @apply ;\n`;
+      cssText += `  }\n\n`;
+      cssText += `  @screen laptop {\n`;
+      cssText += `    @apply ;\n`;
+      cssText += `  }\n`;
+      cssText += `}\n\n`;
     }
-  })
+  });
 
-  return cssText
-}
+  return cssText;
+};
 
-export default ProcesedCss
+export default ProcesedCss;

@@ -11,11 +11,7 @@
   }
   .container-1,
   .container-3 {
-    @apply w-full flex flex-col justify-center items-center gap-[2rem] w-[35rem] h-[40rem];
-  }
-
-  .container-3 {
-    @apply relative;
+    @apply w-full flex flex-col justify-center items-center gap-[2rem] w-[35rem] h-[40rem] relative;
   }
 
   .arrow {
@@ -57,4 +53,22 @@
   .copy-paste {
     @apply text-[white] text-[2.8rem] absolute bottom-[1rem] right-[1rem] cursor-pointer;
   }
+
+  .trash-left,.trash-right{
+
+    @apply absolute text-[white] text-[2.8rem] ;
+
+  }
+
+  .trash-left, .trash-right{
+
+    @apply left-[1rem] bottom-[1rem] cursor-pointer;
+
+  }
+
+  /* .trash-right{
+
+
+
+  } */
 }

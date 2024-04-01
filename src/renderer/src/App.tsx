@@ -1,39 +1,49 @@
-import { useState } from "react";
-import "./App.css";
-import { TbArrowBigRightLinesFilled } from "react-icons/tb";
-import { MdOutlineContentCopy } from "react-icons/md";
-import { Toaster, toast } from "sonner";
-import ProcesedCss from "./JSFunctions/ProcesedCss";
+import { useState } from 'react'
+import './App.css'
+import { TbArrowBigRightLinesFilled } from 'react-icons/tb'
+import { MdOutlineContentCopy } from 'react-icons/md'
+import { BsTrash3 } from 'react-icons/bs'
+import { Toaster, toast } from 'sonner'
+import ProcesedCss from './JSFunctions/ProcesedCss'
 
 function App() {
-  const [finalText, setfinalText] = useState<string>("");
-  const [forData, setforData] = useState<{ [key: string]: string }>({});
+  const [forData, setforData] = useState<{ [key: string]: string }>({})
 
   const capture = (e: any) => {
     setforData({
       ...forData,
-      [e.target.name]: e.target.value,
-    });
-  };
+      [e.target.name]: e.target.value
+    })
+  }
 
   const transformData = (e: string) => {
-    setfinalText(ProcesedCss(forData[e]));
-  };
+    setforData({
+      ...forData,
+      ['finalText']: ProcesedCss(forData[e])
+    })
+  }
 
   const handleCopy = () => {
-    if (finalText != "") {
+    if (forData['finalText'] != '') {
       navigator.clipboard
-        .writeText(finalText)
+        .writeText(forData['finalText'])
         .then(() => {
-          toast.success("Copiado con exito");
+          toast.success('Copiado con exito')
         })
         .catch(() => {
-          toast.error("Copiado con exito");
-        });
+          toast.error('Copiado con exito')
+        })
     } else {
-      toast.error("El campo esta vacio");
+      toast.error('El campo esta vacio')
     }
-  };
+  }
+
+  const handleDelete = (e: string) => {
+    setforData({
+      ...forData,
+      [e]: ''
+    })
+  }
 
   return (
     <>
@@ -45,14 +55,21 @@ function App() {
             <textarea
               className="text-area-left"
               placeholder="Ingrese tu texto"
+              value={forData['initialText']}
               onChange={capture}
               name="initialText"
+            />
+            <BsTrash3
+              onClick={() => {
+                handleDelete('initialText')
+              }}
+              className="trash-left"
             />
           </div>
           <TbArrowBigRightLinesFilled
             className="arrow"
             onClick={() => {
-              transformData("initialText");
+              transformData('initialText')
             }}
           />
           <i className="fa-solid fa-arrow-right"></i>
@@ -60,16 +77,22 @@ function App() {
             <textarea
               className="text-area-right"
               placeholder="Texto Final"
-              value={finalText}
+              value={forData['finalText']}
               name="finalText"
               onChange={capture}
+            />
+            <BsTrash3
+              onClick={() => {
+                handleDelete('finalText')
+              }}
+              className="trash-right"
             />
             <MdOutlineContentCopy onClick={handleCopy} className="copy-paste" />
           </div>
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
