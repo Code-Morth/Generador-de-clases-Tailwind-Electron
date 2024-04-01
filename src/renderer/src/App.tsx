@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import { TbArrowBigRightLinesFilled } from 'react-icons/tb'
 import { MdOutlineContentCopy } from 'react-icons/md'
 import { BsTrash3 } from 'react-icons/bs'

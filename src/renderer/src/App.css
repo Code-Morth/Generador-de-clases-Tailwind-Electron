@@ -1,34 +1,49 @@
 .App-container {
-  @apply flex flex-col justify-center items-center bg-[url(src/images/youtube.gif)] bg-cover bg-center h-screen gap-[5rem];
+  @apply flex flex-col justify-center items-center bg-[url(src/images/youtube.gif)] bg-cover bg-center h-screen;
+
+  gap: calc(5rem * var(--scale));
 
   .title {
-    @apply text-[white] text-[4rem] font-semibold;
+    @apply text-[white]  font-semibold;
     filter: drop-shadow(2px 2px 4px black);
+    font-size: calc(4rem * var(--scale));
   }
 
   .App {
-    @apply flex w-auto gap-[0rem] items-center justify-center  font-semibold;
+    @apply flex items-center justify-center w-full font-semibold;
+    padding-left: calc(10rem * var(--scale));
+    padding-right: calc(10rem * var(--scale));
   }
   .container-1,
   .container-3 {
-    @apply w-full flex flex-col justify-center items-center gap-[2rem] w-[35rem] h-[40rem] relative;
+    @apply flex flex-col justify-center items-center w-full relative;
+
+    gap: calc(2rem * var(--scale));
+    /* width: calc(50rem * var(--scale)); */
+    height: calc(40rem * var(--scale));
   }
 
   .arrow {
-    @apply h-auto  min-w-[10rem] text-[#0a1729] ml-[2rem] mr-[2rem];
+    @apply h-auto text-[#0a1729];
     filter: drop-shadow(0.5rem 0.5rem 1rem black);
     transition: 0.5s ease;
+    min-width: calc(10rem * var(--scale));
+    margin-left: calc(2rem * var(--scale));
+    margin-right: calc(2rem * var(--scale));
   }
 
   .arrow:hover {
-    @apply min-w-[13rem] text-[#0a1729];
+    @apply text-[#0a1729];
     filter: drop-shadow(0.5rem 0.5rem 1rem black);
+    min-width: calc(13rem * var(--scale));
   }
 
   .text-area-left,
   .text-area-right {
-    @apply flex items-center justify-center p-[1.5rem] rounded-[0.6rem] h-full w-full resize-none;
+    @apply flex items-center justify-center rounded-[0.6rem] h-full w-full resize-none;
+    padding: calc(1.5rem * var(--scale));
     outline: none;
+    font-size: calc(1.5rem * var(--scale));
   }
 
   .text-area-left {
@@ -51,24 +66,23 @@
   }
 
   .copy-paste {
-    @apply text-[white] text-[2.8rem] absolute bottom-[1rem] right-[1rem] cursor-pointer;
+    @apply text-[white] absolute cursor-pointer;
+    font-size: calc(2.8rem * var(--scale));
+    right: calc(1rem * var(--scale));
+    top: calc(1rem * var(--scale));
   }
 
-  .trash-left,.trash-right{
+  .trash-left,
+  .trash-right {
+    @apply absolute text-[#ec5959];
 
-    @apply absolute text-[white] text-[2.8rem] ;
-
+    font-size: calc(2.8rem * var(--scale));
   }
 
-  .trash-left, .trash-right{
-
-    @apply left-[1rem] bottom-[1rem] cursor-pointer;
-
+  .trash-left,
+  .trash-right {
+    @apply cursor-pointer;
+    right: calc(1rem * var(--scale));
+    bottom: calc(1rem * var(--scale));
   }
-
-  /* .trash-right{
-
-
-
-  } */
 }
