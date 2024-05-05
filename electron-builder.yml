@@ -1,5 +1,6 @@
 appId: com.electron.app
-productName: utility-codes
+productName: Converter Class Tailwind
+icon:  "./build/icon.ico"
 directories:
   buildResources: build
 files:
@@ -12,9 +13,12 @@ files:
 asarUnpack:
   - resources/**
 win:
-  executableName: utility-codes
+  executableName: Converter Class Tailwind
   target:
     - portable
+  icon:  "./build/icon.ico"
+  publisherName: "CodeMorth"
+  legalTrademarks: "© CodeMorth 2024"
 nsis:
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
@@ -42,6 +46,6 @@ appImage:
 npmRebuild: false
 publish:
   provider: generic
-  url: https://example.com/auto-updates
+  url: https://github.com/Code-Morth/Generador-de-clases-Tailwind-Electron.git
 electronDownload:
   mirror: https://npmmirror.com/mirrors/electron/
