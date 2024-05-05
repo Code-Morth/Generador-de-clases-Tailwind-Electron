@@ -20,12 +20,12 @@ const ProcesedCss = (data: any) => {
   classesArray.forEach((className) => {
     if (className.trim() !== '') {
       cssText += `.${className.trim()} {\n`;
-      cssText += `  @apply ;\n\n`;
+      cssText += `  @apply visible ;\n\n`;
       cssText += `  @screen tablet {\n`;
-      cssText += `    @apply ;\n`;
+      cssText += `    @apply visible ;\n`;
       cssText += `  }\n\n`;
       cssText += `  @screen laptop {\n`;
-      cssText += `    @apply ;\n`;
+      cssText += `    @apply visible ;\n`;
       cssText += `  }\n`;
       cssText += `}\n\n`;
     }

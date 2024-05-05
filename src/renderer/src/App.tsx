@@ -47,7 +47,7 @@ function App() {
   return (
     <>
       <Toaster richColors position="top-center" />
-      <div className="App-container">
+      <div style={{backgroundImage:'url(src/images/youtube.gif)'}} className="App-container">
         <h1 className="title">Generador de clases de Tailwind</h1>
         <div className="App">
           <div className="container-1">

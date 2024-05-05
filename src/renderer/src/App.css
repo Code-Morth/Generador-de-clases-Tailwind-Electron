@@ -1,5 +1,5 @@
 .App-container {
-  @apply flex flex-col justify-center items-center bg-[url(src/images/youtube.gif)] bg-cover bg-center h-screen;
+  @apply flex flex-col justify-center items-center bg-cover bg-center h-screen;
 
   gap: calc(5rem * var(--scale));
 
