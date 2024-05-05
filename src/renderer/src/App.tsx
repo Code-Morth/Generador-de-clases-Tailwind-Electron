@@ -4,6 +4,7 @@ import { MdOutlineContentCopy } from 'react-icons/md'
 import { BsTrash3 } from 'react-icons/bs'
 import { Toaster, toast } from 'sonner'
 import ProcesedCss from './JSFunctions/ProcesedCss'
+import backgroundImage from './images/youtube.gif';
 
 function App() {
   const [forData, setforData] = useState<{ [key: string]: string }>({})
@@ -47,7 +48,7 @@ function App() {
   return (
     <>
       <Toaster richColors position="top-center" />
-      <div style={{backgroundImage:'url(src/images/youtube.gif)'}} className="App-container">
+      <div style={{backgroundImage:`url(${backgroundImage})`}} className="App-container">
         <h1 className="title">Generador de clases de Tailwind</h1>
         <div className="App">
           <div className="container-1">
