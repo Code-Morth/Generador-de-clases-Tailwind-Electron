@@ -1,8 +1,8 @@
-#Generador de clases Tailwind Electron Desktop
+# Generador de clases Tailwind Electron Desktop
 
 Esta aplicacion sirve para crear clases de tailwind a partir de codigo de React o en especifico en donde se use **ClasName**, ya que este es el filtro que usa el programa para extraer todas clases existentes en tu codigo.
 
-#Formas de instalacion
+# Formas de instalacion
 
 Hay 2 formas de usar este programa, uno es simplemente descargandote el portable **.exe** y simplemente ejecutarlo, que es la forma mas rapida facil y sencilla.
 
@@ -10,12 +10,12 @@ La segunda forma es tu mismo buildear la aplicacion, esto tambien es relativamen
 
 El porque lo querrias buildear tu mismo, entiendo que seria por agregarle funcionalidades, o talvez modificar el icono del **.exe** o talvez solo quieres aprender, sea cual sea el caso, diviertete.
 
-#Pasos para ejecutar el portable **.exe**
+# Pasos para ejecutar el portable **.exe**
 
 -Descargas el archivo portable.
 -Lo ubicas y lo ejecutas, asi de simple.
 
-#Pasos para buildear tu mismo tu **.exe**
+# Pasos para buildear tu mismo tu **.exe**
 
 -Te ubicas en la carpeta en donde quieras clonar el repositorio.
 -Abres *CMD* escribes el siguiente comando:
