@@ -20,27 +20,19 @@ El porque lo querrias buildear tu mismo, entiendo que seria por agregarle funcio
 -Te ubicas en la carpeta en donde quieras clonar el repositorio.
 -Abres *CMD* escribes el siguiente comando:
 
-\```
-git clone https://github.com/Code-Morth/Generador-de-clases-Tailwind-Electron.git
-\```
+`git clone https://github.com/Code-Morth/Generador-de-clases-Tailwind-Electron.git`
 
 -Una vez ha terminado de clonar, cierras todo, abres *CMD* en modo administrador (esto es necesario para ejecutar el build), por medio de comandos te ubicas en la carpeta en donde clonaste el repositorio, y escribes el siguiente comando : 
 
-\```
-code .
-\```
+`code .`
 
 -Una ves esta en **Visual Studio Code** abres la terminal de visual, y escribes el siguiente comando para instalar todas las dependencias, librerias, etc.
 
-\```
-npm i
-\```
+`npm i`
 
 -Terminado la instalacion, puedes correr un:
 
-\```
-npm run dev
-\```
+`npm run dev`
 
 para ver si ejecuta el codigo correctamente.
 
@@ -48,9 +40,7 @@ para ver si ejecuta el codigo correctamente.
 
 -Para buildear la aplicacion ejecutas el siguiente comando:
 
-\```
-npm run build
-\```
+`npm run build`
 
 *Si el build se completo satisfactoriamente, ahora solo quedaria ubicar la carpeta en donde esta el programa*
 
