@@ -4,6 +4,8 @@
 
 This application is used to generate Tailwind classes from React code or specifically where **ClassName** is used, as this is the filter used by the program to extract all existing classes in your code.
 
+For now, I have only tested it on Windows. I'm not sure if the build will work correctly on other operating systems.
+
 # Installation Methods
 
 There are 2 ways to use this program, one is simply by downloading the portable **.exe** and running it, which is the fastest, easiest, and simplest way.
@@ -60,6 +62,8 @@ to see if the code executes correctly.
 # Generador de clases Tailwind Electron Desktop
 
 Esta aplicacion sirve para crear clases de tailwind a partir de codigo de React o en especifico en donde se use **ClasName**, ya que este es el filtro que usa el programa para extraer todas clases existentes en tu codigo.
+
+Por ahora solo lo he probado en Windows, en otros sistemas operativos, no se si funcione correctamente el build.
 
 # Formas de instalacion
 
