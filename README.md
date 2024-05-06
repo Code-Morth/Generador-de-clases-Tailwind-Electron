@@ -1,3 +1,62 @@
+# English
+
+# Tailwind Classes Generator Electron Desktop
+
+This application is used to generate Tailwind classes from React code or specifically where **ClassName** is used, as this is the filter used by the program to extract all existing classes in your code.
+
+# Installation Methods
+
+There are 2 ways to use this program, one is simply by downloading the portable **.exe** and running it, which is the fastest, easiest, and simplest way.
+
+The second way is to build the application yourself, which is also relatively simple. I'll try to be as clear as possible so you don't encounter any errors in this process.
+
+The reason why you might want to build it yourself, I understand it might be to add functionalities, or maybe to modify the icon of the **.exe** or maybe you just want to learn, whatever the case, have fun.
+
+## Steps to run the portable **.exe**
+
+1. Go to the following link **[Releases](https://github.com/Code-Morth/Generador-de-clases-Tailwind-Electron/releases)**
+
+2. Download the portable file.
+
+3. Locate it and run it, that simple.
+
+## Steps to build your own **.exe**
+
+1. Navigate to the folder where you want to clone the repository.
+
+2. Open **CMD** and type the following command:
+
+`git clone https://github.com/Code-Morth/Generador-de-clases-Tailwind-Electron.git`
+
+3. Once cloning is complete, close everything, open **CMD** in administrator mode (this is necessary to run the build), navigate through commands to the folder where you cloned the repository, and type the following command:
+
+`code .`
+
+4. Once you're in **Visual Studio Code**, open the visual terminal, and type the following command to install all dependencies, libraries, etc.
+
+`npm i`
+
+5. Once the installation is complete, you can run:
+
+`npm run dev`
+
+to see if the code executes correctly.
+
+***If everything is going well so far, the only thing left would be to build it and generate the portable **.exe**.***
+
+6. To build the application, execute the following command:
+
+`npm run build`
+
+***If the build completes successfully, now you just need to locate the folder where the program is***
+
+7. Go to the folder where you cloned the repository, and look for the folder named **dist**, there you would find the program ready for use.
+
+
+------------------------------------------------------------------------------------------
+
+# Español
+
 # Generador de clases Tailwind Electron Desktop
 
 Esta aplicacion sirve para crear clases de tailwind a partir de codigo de React o en especifico en donde se use **ClasName**, ya que este es el filtro que usa el programa para extraer todas clases existentes en tu codigo.
@@ -49,3 +108,4 @@ para ver si ejecuta el codigo correctamente.
 ***Si el build se completo satisfactoriamente, ahora solo quedaria ubicar la carpeta en donde esta el programa***
 
 7. Ve a la carpeta en donde hiciste el **git clone**, y busca la carpeta con el nombre **dist**, ahi estaria el programa listo para su uso.
+
