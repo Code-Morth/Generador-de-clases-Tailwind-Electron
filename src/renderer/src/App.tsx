@@ -9,7 +9,7 @@ import backgroundImage from './images/youtube.gif';
 function App() {
   const [forData, setforData] = useState<{ [key: string]: string }>({})
 
-  const capture = (e: any) => {
+  const capture = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setforData({
       ...forData,
       [e.target.name]: e.target.value
