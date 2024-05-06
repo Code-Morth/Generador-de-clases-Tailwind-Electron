@@ -12,27 +12,27 @@ El porque lo querrias buildear tu mismo, entiendo que seria por agregarle funcio
 
 ## Pasos para ejecutar el portable **.exe**
 
--Descargas el archivo portable.
+- Descargas el archivo portable.
 
--Lo ubicas y lo ejecutas, asi de simple.
+- Lo ubicas y lo ejecutas, asi de simple.
 
 ## Pasos para buildear tu mismo tu **.exe**
 
--Te ubicas en la carpeta en donde quieras clonar el repositorio.
+- Te ubicas en la carpeta en donde quieras clonar el repositorio.
 
--Abres *CMD* escribes el siguiente comando:
+- Abres *CMD* escribes el siguiente comando:
 
 `git clone https://github.com/Code-Morth/Generador-de-clases-Tailwind-Electron.git`
 
--Una vez ha terminado de clonar, cierras todo, abres *CMD* en modo administrador (esto es necesario para ejecutar el build), por medio de comandos te ubicas en la carpeta en donde clonaste el repositorio, y escribes el siguiente comando : 
+- Una vez ha terminado de clonar, cierras todo, abres *CMD* en modo administrador (esto es necesario para ejecutar el build), por medio de comandos te ubicas en la carpeta en donde clonaste el repositorio, y escribes el siguiente comando : 
 
 `code .`
 
--Una ves esta en **Visual Studio Code** abres la terminal de visual, y escribes el siguiente comando para instalar todas las dependencias, librerias, etc.
+- Una ves estas en **Visual Studio Code** abres la terminal de visual, y escribes el siguiente comando para instalar todas las dependencias, librerias, etc.
 
 `npm i`
 
--Terminado la instalacion, puedes correr un:
+- Terminado la instalacion, puedes correr un:
 
 `npm run dev`
 
@@ -40,10 +40,10 @@ para ver si ejecuta el codigo correctamente.
 
 *Si hasta ahora todo va bien, lo unico que faltaria seria hacer el build y que esto genere el **.exe** portable*
 
--Para buildear la aplicacion ejecutas el siguiente comando:
+- Para buildear la aplicacion ejecutas el siguiente comando:
 
 `npm run build`
 
 *Si el build se completo satisfactoriamente, ahora solo quedaria ubicar la carpeta en donde esta el programa*
 
--Ve a la carpeta en donde hiciste el **git clone**, y busca la carpeta con el nombre **dist**, ahi estaria el programa listo para su uso.
+- Ve a la carpeta en donde hiciste el **git clone**, y busca la carpeta con el nombre **dist**, ahi estaria el programa listo para su uso.
