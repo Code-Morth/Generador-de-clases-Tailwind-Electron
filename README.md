@@ -8,11 +8,16 @@ For now, I have only tested it on Windows. I'm not sure if the build will work c
 
 # Installation Methods
 
-There are 2 ways to use this program, one is simply by downloading the portable **.exe** and running it, which is the fastest, easiest, and simplest way.
+There are 3 ways to use this program.
 
-The second way is to build the application yourself, which is also relatively simple. I'll try to be as clear as possible so you don't encounter any errors in this process.
+1. One is by accessing [Tailwind Class Generator](https://web-generador-de-clases-tailwind-electron.vercel.app/) and using it.
 
-The reason why you might want to build it yourself, I understand it might be to add functionalities, or maybe to modify the icon of the **.exe** or maybe you just want to learn, whatever the case, have fun.
+2. Another is if you want to have the desktop program as a portable **.exe**.
+
+3. And the third way is to build the application yourself, which is also relatively simple. I'll try to be as clear as possible so you don't encounter any errors while carrying out this process.
+
+The reason you might want to build it yourself is to add functionalities, or maybe to modify the icon of the `.exe` file, or perhaps just to learn. Whatever the case, have fun!
+
 
 ## Steps to run the portable **.exe**
 
@@ -67,9 +72,13 @@ Por ahora solo lo he probado en Windows, en otros sistemas operativos, no se si 
 
 # Formas de instalacion
 
-Hay 2 formas de usar este programa, uno es simplemente descargandote el portable **.exe** y simplemente ejecutarlo, que es la forma mas rapida facil y sencilla.
+Hay 3 formas de usar este programa.
 
-La segunda forma es tu mismo buildear la aplicacion, esto tambien es relativamente sencillo, tratare de ser lo mas claro posible para que no tengas ningun error llevando a cabo este proceso.
+1. Una es ingresando aca [Generador-De-Clases-Tailwind](https://web-generador-de-clases-tailwind-electron.vercel.app/) y usarlo.
+
+2. Otra es, si quieres tener el programa de escritorio en un portable **.exe**.
+
+3. Y la tercera forma es tu mismo buildear la aplicacion, esto tambien es relativamente sencillo, tratare de ser lo mas claro posible para que no tengas ningun error llevando a cabo este proceso.
 
 El porque lo querrias buildear tu mismo, entiendo que seria por agregarle funcionalidades, o talvez modificar el icono del **.exe** o talvez solo quieres aprender, sea cual sea el caso, diviertete.
 
