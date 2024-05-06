@@ -12,9 +12,11 @@ El porque lo querrias buildear tu mismo, entiendo que seria por agregarle funcio
 
 ## Pasos para ejecutar el portable **.exe**
 
-1. Descargas el archivo portable.
+1. Ve al siguiente enlace **[Releases](https://github.com/Code-Morth/Generador-de-clases-Tailwind-Electron/releases)**
 
-2. Lo ubicas y lo ejecutas, asi de simple.
+2. Descargas el archivo portable.
+
+3. Lo ubicas y lo ejecutas, asi de simple.
 
 ## Pasos para buildear tu mismo tu **.exe**
 
